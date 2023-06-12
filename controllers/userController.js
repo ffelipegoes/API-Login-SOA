@@ -1,7 +1,5 @@
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 const User = require('../models/user');
-const getToken = require('../helpers/get-token');
 const createUserToken = require('../helpers/create-user-token');
 
 module.exports = class UserController {

@@ -5,7 +5,7 @@ const createUserToken = async (user, req, res) => {
   const token = jwt.sign(
     // payload data
     {
-      id: user?.id_user,
+      id: user?.idUser,
       name: user?.nome,
       email: user?.email,
     },
@@ -18,7 +18,7 @@ const createUserToken = async (user, req, res) => {
     message: 'Você está autenticado!',
     success: true,
     token: token,
-    userId: user.id_user,
+    userId: user.idUser,
   });
 };
 
